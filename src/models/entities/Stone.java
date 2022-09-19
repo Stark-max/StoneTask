@@ -49,6 +49,5 @@ public abstract class Stone {
     public void setColor(String color) {
         this.color = color;
     }
-
-
 }
+

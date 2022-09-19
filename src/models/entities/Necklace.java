@@ -23,4 +23,24 @@ public class Necklace {
                 "stones=" + stones +
                 '}';
     }
+    public void addStone(){
+        Admin admin = new Admin();
+        Stone stone1 = new PreciousStone("Pearls",794.20,4.138,"Red",4);
+        Stone stone2 = new SemiPreciousStone("Opal",570.56,1.441,"White","Iridescence",3);
+        Stone stone3 = new SemiPreciousStone("Turquoise",655.38,3.265,"Black","Opalescence",4);
+        Stone stone4 = new SemiPreciousStone("Opal",570.56,1.138,"White","Tiger_Eye",3);
+        Stone stone5 = new PreciousStone("Diamond",311.86,3.830,"Red",1);
+        stones.add(stone1);
+        stones.add(stone2);
+        stones.add(stone3);
+        stones.add(stone4);
+        stones.add(stone5);
+        System.out.println(stones);
+        System.out.println("Total carat weight: " + admin.totalCaratWeight(stones));
+        System.out.println("Total stones cost: " + admin.totalCost(stones));
+        Machine.sortByPrice(stones);
+        System.out.println("Stones sorted: " + stones);
+        Machine.sortByTransparency(stones);
+        System.out.println("Sort by transparency: "+stones);
+    }
 }
