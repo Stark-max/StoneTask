@@ -22,6 +22,18 @@ public abstract class Stone {
         return transparent;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public void setTransparent(int transparent) {
         this.transparent = transparent;
     }
